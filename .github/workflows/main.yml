@@ -23,10 +23,10 @@ jobs:
         distribution: 'adopt'
 
     - name: Set up Android SDK
-      uses: android/setup-android@v2
+      uses: android-actions/setup-android@v2
       with:
-        sdk-platform: '30'
-        sdk-build-tools: '30.0.3'
+        sdk-version: '30.0.3'
+
     - name: Build project
       run: |
         cd breadwallet-android
