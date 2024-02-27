@@ -29,7 +29,6 @@ jobs:
 
     - name: Build project
       run: |
-        cd breadwallet-android
         ./gradlew build
 
     - name: Upload APK as artifact
